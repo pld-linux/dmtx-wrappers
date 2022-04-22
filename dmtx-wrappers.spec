@@ -24,6 +24,8 @@ Source0:	https://github.com/dmtx/dmtx-wrappers/archive/%{gitref}/%{name}-%{snap}
 # Source0-md5:	cb19f1ead190d8183cc36f41f4919224
 URL:		https://github.com/dmtx/dmtx-wrappers
 BuildRequires:	libdmtx-devel >= 0.7.3
+BuildRequires:	rpm-build >= 4.6
+BuildRequires:	rpmbuild(macros) >= 1.410
 %if %{with php}
 BuildRequires:	%{php_name}-devel
 %endif
@@ -100,6 +102,7 @@ License:	LGPL v2.1+
 Group:		Libraries
 Requires:	libdmtx-devel >= 0.7.3
 Requires:	vala
+BuildArch:	noarch
 
 %description -n vala-libdmtx
 This package contains bindings for using libdmtx from Vala.
