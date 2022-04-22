@@ -23,7 +23,10 @@ Group:		Libraries
 Source0:	https://github.com/dmtx/dmtx-wrappers/archive/%{gitref}/%{name}-%{snap}.tar.gz
 # Source0-md5:	cb19f1ead190d8183cc36f41f4919224
 URL:		https://github.com/dmtx/dmtx-wrappers
+BuildRequires:	autoconf >= 2.50
+BuildRequires:	automake
 BuildRequires:	libdmtx-devel >= 0.7.3
+BuildRequires:	libtool
 BuildRequires:	rpm-build >= 4.6
 BuildRequires:	rpmbuild(macros) >= 1.410
 %if %{with php}
