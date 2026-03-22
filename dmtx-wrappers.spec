@@ -17,7 +17,8 @@ Name:		dmtx-wrappers
 Version:	0.7.3
 %define	gitref	61072c30ebbc7bb11a54fbc8869af3e868879a40
 %define	snap	20141125
-Release:	0.%{snap}.1
+%define	rel	1
+Release:	0.%{snap}.%{rel}
 License:	LGPL v2.1+, GPL v2+
 Group:		Libraries
 Source0:	https://github.com/dmtx/dmtx-wrappers/archive/%{gitref}/%{name}-%{snap}.tar.gz
